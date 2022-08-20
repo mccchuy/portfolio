@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+nav {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    margin-bottom: 30px;
+    transition: 0.6s; 
+}
+
+nav.sticky {
+    background: white (75%);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+nav .brand {
+    color:#61210F;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .menu a{
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 30px;
+    color: #B16651;
+    transition: 0.3s;
+}
+
+
+nav .menu a:hover {
+    border-bottom: #61210F 2px solid;
+}
+
+nav .btn {
+    color:#B16651;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+    transition-property: color;
+}
+
+nav .btn:hover {
+    color: #61210F ;
+}
+
+@media (max-width: 1060px) {
+    nav .btn {
+        display: block;
+    }
+
+    nav .menu {
+        position: fixed;
+        background:white;
+        flex-direction: column;
+        min-width: 100%;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 80px 50px;
+        transition: 0.5s;
+        transition-property: right;
+    }
+
+    nav .menu.active {
+        right: 0;
+    }
+
+    nav .menu a{
+        display: block;
+        font-size: 20px;
+        margin: 20px;
+    }
+    
+}
+.section-main {
+    padding-top: 15vh;
+    width: 100%;
+}
+
+
+/*content*/
+
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    object-fit: cover;
+}
+
+.content p {
+    margin: 50px 0 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; 
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.content h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: block;
+    color: #61210F;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.req {
+    width: 50%;
+    margin: 50px auto;
+    text-align: center;
+    list-style: none;
+}
+
+.req li {
+    line-height: 1.5;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.view-zoox {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    color: #2A9D8F; 
+    background-color: transparent;
+    border: 2px solid #2A9D8F;
+    padding: 12px 32px;
+    line-height: 1.1;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.view-zoox:hover {
+    color: #ECEBE4;
+    background-color: #2A9D8F;
+    border: 2px solid #2A9D8F;
+    transition: .3s;
+}
+
+/* Create four equal columns that floats next to each other */
+.lfcolumn {
+    margin: 50px 0 50px 0;
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after the columns */
+  .lfrow:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .lfcolumn {
+      width: 50%;
+    }
+
+    .content p {
+        margin: 50px 0 0 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%; 
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 1.3;
+    }
+    .s2row {
+        display: block;
+    }
+    .s2col1 {
+        width: 100%;
+    }
+
+    .s1col2 {
+        width: 100%;
+    }
+
+    /* #col2 {
+        margin-top: 50px;
+    } */
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .lfcolumn  {
+      width: 100%;
+    }
+
+    .content p {
+        margin: 50px 0 0 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%; 
+        font-size: 18px;
+        line-height: 1.3;
+    }
+}
+
+.lfcolumn .lf {
+    display: block;
+    width: 95%;
+    object-fit: cover;
+}
+
+.lfcolumn h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lfcolumn p {
+    margin: 30px 0 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; 
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.s1row {
+    display: flex;
+
+}
+
+.s1col1 {
+    width: 70%;
+}
+  
+  @media screen and (max-width: 600px) {
+    .s1row {
+        display: block;
+    }
+
+    .s1col1 {
+        width:100%;
+
+    }
+    /*can't get to expand*/
+    .s1col2 {
+        margin-left: 20vw;
+
+    }
+
+    .s1col2 p1{
+        min-width: 40vh;
+    }
+
+    .hfp {
+        margin-bottom: 30px;
+
+     }
+
+     #temprow {
+         margin-bottom: -225px;
+
+     }
+
+
+  }
+
+.s1col1 .s1 {
+    display: block;
+    object-fit: cover;
+    max-width: 75vh;
+    margin: 10px auto 10px auto;
+}
+
+.s1col2 {
+    width: 40%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.s1col2 h4 {
+    font-size: 3.3vh;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.s1col2 p1 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    width: 70%;
+}
+
+#col2 {
+    margin-top: 1.5vh;
+}
+
+/*figure out how to expand image*/
+
+#temprow{
+    min-height: 100vh;
+
+}
+
+#temprow .s1col1{
+    height: inherit;
+}
+
+#temprow .s1col1 .s2{
+    min-width: 55vw;
+    margin-top: 90px;
+}
+
+
+
+
+.s3 {
+    min-width: 90vw;
+}
+
+p2 {
+    margin-left: 4vw;
+}
+
+#button2 {
+    margin-top: 50px;
+}
+
+/*content end*/
+
+.footer-basic {
+    padding: 40px 0; 
+}
+
+.footer-basic ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.footer-basic ul li a{
+    color: #B16651;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.footer-basic ul li a:hover {
+    color: #61210F;
+}
+
+.footer-basic ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+
+.content img {
+    visibility: hidden;
+}
+
+.fadeIn {
+    -webkit-animation: animat_show 0.8s;
+    animation: animat_show 0.8s;
+    visibility: visible !important;
+}
+
+@keyframes animat_show{
+    0%{opacity:0}
+    100%{opacity:1}
+}
