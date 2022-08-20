@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Prata&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de8b3395ba.js" crossorigin="anonymous"></script>
+    <title>Marianne Chuy's Portfolio</title>
+    <link rel="stylesheet" href="teardown.css">
+
+</head>
+<body>
+    <nav>
+        <a href = "/work/work.html" class = "brand">Marianne Chuy</a>
+        <div class = "menu">
+
+            <div class = "btn">
+                <i class = "fas fa-times close-btn"></i>
+            </div>
+
+            <a style = "color: #61210F;" href = "/work/work.html">Work</a>
+            <a href = "/about/about.html">About</a>
+            <a href = "https://docs.google.com/document/d/1l_R81H0s7v1poXG_35IL6UajEXeFXLnsfp8eD2Wewpw/edit?usp=sharing" target="_blank">Resume</a>
+            <a href = "mailto:marianne.chuy@tufts.edu">Contact</a>
+        </div>
+
+        <div class = "btn">
+            <i class = "fas fa-bars menu-btn"></i>
+        </div>
+    </nav>
+    <section class = "section-main">
+    <section class = "content">
+        <img src = "teardownimages/titlepage.png">
+            <p>This product teardown was done to develop a basic knowledge of a medicine nebulizer, gain insight about
+                users and their experience, gain knowledge of how consumer products function and are constructed,
+                and to understand the role of machine design elements in mechanical design.</p>
+        
+        <h2>Project Outline</h2>
+        <div class ="rpc-container">
+            <a href = "#userexperience" class = "liheader">User Experience</a>
+            <ul>
+                <li>Intended User</li>
+                <li>Packaging</li>
+                <li>First Use</li>
+                <li>Task Analysis</li>
+                <li>Off-Nominal Use</li>
+            </ul>
+
+            <a href = "#designfunction" class = "liheader">Design & Function</a>
+            <ul>
+                <li>External Product Overview</li>
+                <li>Exploded Product View</li>
+                <li>Decomposition Table</li>
+                <li>Function Structure</li>
+                <li>CAD Model of Product</li>
+            </ul>
+        </div>
+        <h2 id = "userexperience">User Experience</h2>
+        <div class="row">
+            <div class="col1">
+                <img src = "teardownimages/nebulizer.png">
+            </div>
+            <div class="col2">
+                <h4>Intended User</h4> <br>
+                <p1> Based on packaging, we deduced that the indended audience is 
+                    primarily English-speaking people that need medicine administered
+                     in vapor form. However, the product has no manufacturer contact 
+                     info, so it could be intended for a bulk order by, 
+                     for example, a hospice center, instead of for single-consumer use.
+                </p1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <img class = "packagingimg" src = "teardownimages/packaging.png">
+            </div>
+            <div class="col2">
+                <h4>Packaging</h4> <br>
+                <p1> To open the box, the user opens the flap on the top of the box to reveal the product inside.
+                    The packaging seems able to withstand harsh shipping conditions 
+                    (repeated shaking/jerking without opening) though prolonged exposure to water 
+                    will damage the box.
+                    <br>
+                    <ol class = "unboxinglist">
+                        <li>After opening the box, you can see all of the parts of the product packaged neatly inside. In the box there is an instruction manual, so the user might find it useful to look at that before proceeding.</li>
+                        <li>These are all of the individual components that came inside of the box. The atomizer, is packaged in plastic, and so is the face attachment along with a plastic tube, elastics, and the medicine container. There are also two separate plastic bags full of foam balls (filters). The wire to plug in is wrapped neatly. Instruction manual is also present.</li>
+                        <li>This image shows everything outside the packaging. The atomizer and cord aren’t shown but they were also taken out of their packaging (the foam balls were left as is). The next step for the user to do would be assembly and reading the instruction manual.</li>
+                    </ol>
+                </p1>               
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <img src = "teardownimages/firstassembly.png">
+            </div>
+            <div class="col2">
+                <h4>First Use</h4> <br>
+                <p1>We found that the first assembly without instructions did not seem obvious; not sure how the multiple
+                    components fit together. The user knew they were ready to try the product once all the parts were used, 
+                    if parts went unused it was assumed they were not needed, such as the cotton balls. The product required 
+                    an outlet to be about 4 ft away and it needed to be placed on a non-smooth surface, vibrations from usage
+                     caused the product to shift.
+                     <br><br>
+                    Assembly with instructions (approx 5 min.)
+                    <ol class = "assembly">
+                        <li>Plastic packaging was removed</li>
+                        <li>Plugged in connection tube into the atomizer</li>
+                        <li>Placed a styrofoam cylinder in atomizer inlet</li>
+                        <li>Plugged in the power cord to the atomizer</li>
+                        <li>Attached the connection tube to the medicine container</li>
+                        <li>Placed atomization mask on the medicine container</li>
+                        <li>Attached orange elastics to atomization mask</li>
+                    </ol>
+                    <br>
+                    Assembly times and methods with and without instructions did not differ much from each other, the main difference was that the user assembling with instructions had a better idea of the purpose of each component.
+                </p1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <img src = "teardownimages/taskanalysis.png">
+            </div>
+            <div class="col2">
+                <h4>Task Analysis</h4> <br>
+                <p1> This task analysis will take us through the user's first attempt at using the nebulizer:
+                    <ol class = "assembly">
+                        <li>Attached tube to the medicine container</li>
+                        <li>Attached other end of tube to the atomizer</li>
+                        <li>Poured water into the medicine container</li>
+                        <ul>
+                            <li>Poured water in through hole in cap (didn’t take the cap off)</li>
+                            <li>Water spilled everywhere because she over poured - did not make note of fill line (noted that it was not intuitive)</li>
+                        </ul>
+                        <li>Put mask on mouth and held it there (elastics didn’t hold very well on face) </li>
+                        <li>Found filter cotton, tried to put it in, there was already one present</li>
+                        <li>Attempted to use machine</li>
+                        <ul>
+                            <li>Forgot to plug in</li>
+                        </ul>
+                        <li>Plugged machine in, flipped switch on</li>
+                        <li>Inhaled vapor</li>
+                        <li>When done, turned off machine, emptied medicine container, and put away</li>
+                    </ol>
+                </p1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <img src = "teardownimages/offnominaluse.png">
+            </div>
+            <div class="col2">
+                <h4>Off-Nominal Use</h4> <br>
+                <p1> We found that the nebulizer could be used as either a humidifier or a facial steamer.</p1>
+                <br>
+                <p1> For a humidifier, one could put water inside of the medicine container, attach the mouthpiece, 
+                    and use it as a humidifier in a small container/room. Couldn’t be used very well as humidifier 
+                    for a large room, because it’s not big enough. This product would tolerate the task, and there 
+                    would not be excessive strain on it physically. However, this might wear down the product over time,
+                     because with a humidifier, the product would be constantly running, wheras this product is only meant to be used
+                     for short periods of time.
+                </p1>
+
+                <br>
+                <p1> A facial steamer is a beauty tool used to open pores to increase circulation to the face and allow products 
+                    to absorb into the skin more efficiently. It’s also used as a form of hydration to the skin.
+                    This product produces steam the same way the a face steamer does, also is meant to be used for a short period of time. No
+                     temperature setting on the atomizer, vapor is meant to be hot on a face steamer. Warm/hot water could be placed in the
+                     medicine container, but we do not know if it is heat-safe.
+                    
+                </p1>
+            </div>
+        </div>
+
+        <h2 id = "designfunction">Design & Function</h2>
+
+
+        <div class="row">
+            <div class="col1">
+                <img src = "teardownimages/extproductoverview.png">
+            </div>
+            <div class="col2">
+                <h4>External Product</h4> <br>
+                <p1> The on/off switch on the atomizer is the main feature that users interact with to enable proper usage.</p1>
+                <br>
+                <p1>If the product is working properly, the user will be able to see the vapor being emitted from the atomizer 
+                    and hear the machine whirring as it is operating. </p1>
+                <br>
+                <p1> The atomizer is placed on a flat, rough surface and the user has the option to either attach a mask or funneling 
+                    tube (they will wrap their mouth around it) to the medicine container. Both options involve holding the medicine 
+                    container parallel to the face. </p1>
+                <br>
+                <p1> There are no dials on the atomizer to control the vapor flow. Adjustments fall on the user loosening the mask they
+                     wear to release some of the vapor being emitted into the air instead of into their body. This is not ideal, as
+                      medicine is often expensive and this will lead to waste.</p1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <img style = "display: block;width: 90%; height: auto;" src = "teardownimages/explodedview.png">
+            </div>
+            <div class="col2">
+                <h4>Exploded Product View</h4> <br>
+                <p1> The photo on the left depicts an exploded view of the overall product.</p1>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col1ie">
+                <h4 >Internal View</h4> <br> 
+                <img src = "teardownimages/internalcomponents.png">
+            </div>
+            <div class="col1ie">
+                <h4>External View</h4> <br>
+                <img src = "teardownimages/externalcomponents.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <img  src = "teardownimages/decomptable.png">
+            </div>
+            <div class="col2">
+                <h4>Decomposition Table</h4> <br>
+                <p1> This is the first page of the product decomposition table that details each component of the 
+                    product, their name, quantity required, material it's made of, manufacturing process, and a close-up image.</p1>
+
+                <button type = "button" class = "dct-link" onclick= "window.open('https://1drv.ms/w/s!AtN3fH1-andIljK15Nc7JG9UtSWe?e=Hcfb7P')">View Full Table</button>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                <img style =  "width: 80%;"" src = "teardownimages/functionstructure.png">
+            </div>
+            <div class="col2">
+                <h4>Function Structure</h4> <br>
+                <p1> This function structure details the energy, material, and information inputs and outputs. It provides a narrative that identifies critical components and traces their contribution
+                    to the main functionality of the product.
+                </p1>
+            </div>
+        </div>
+        <h4  class="rowCAD">CAD Models</h4> <br>
+            <div class="row">
+            <div class="col1ie">
+                <h4 >Isometric View</h4> <br> 
+                <img style = "width: 80%;"src = "teardownimages/CADiso.png">
+            </div>
+            <div class="col1ie">
+                <h4>Exploded View</h4> <br>
+                <img  style = "width: 80%;"src = "teardownimages/CADexploded.png">
+            </div>
+        </div>
+
+        </div>
+
+        <div class="footer-basic">
+            <footer>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/work/work.html">All</a></li>
+                    <li class="list-inline-item"><a href = "/pastelitos/pastelitos.html">Front-End Website Development</a></li>
+                    <li class="list-inline-item"><a href="/zoox/zoox.html">UI/UX Design & Prototyping</a></li>
+                    <li class="list-inline-item"><a href="/robot.html">Hardware and Software Development</a></li>
+                    <li class="list-inline-item"><a style = "color: #61210F;"href="teardown.html">Product Design Analysis</a></li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+    </section>
+
+    <script type = "text/javascript" src = "/about/about.js"></script>
+        <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script>
+
+    function showImages(el) {
+        var windowHeight = jQuery( window ).height();
+        $(el).each(function(){
+            var thisPos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (topOfWindow + windowHeight - 200 > thisPos ) {
+                $(this).addClass("fadeIn");
+            }
+        });
+    }
+
+    // if the image in the window of browser when the page is loaded, show that image
+    $(document).ready(function(){
+            showImages('.content img');
+    });
+
+    // if the image in the window of browser when scrolling the page, show that image
+    $(window).scroll(function() {
+            showImages('.content img');
+    });
+        </script>
+</body>
+</html>
