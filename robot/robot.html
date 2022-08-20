@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Prata&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de8b3395ba.js" crossorigin="anonymous"></script>
+    <title>Marianne Chuy's Portfolio</title>
+    <link rel="stylesheet" href="robot.css"></head>
+<body> 
+    <nav>
+        <a href = "/portfolio/work/work.html" class = "brand">Marianne Chuy</a>
+        <div class = "menu">
+
+            <div class = "btn">
+                <i class = "fas fa-times close-btn"></i>
+            </div>
+
+            <a style = "color: #61210F;" href = "/portfolio/work/work.html">Work</a>
+            <a href = "/portfolio/about/about.html">About</a>
+            <a href = "https://docs.google.com/document/d/1l_R81H0s7v1poXG_35IL6UajEXeFXLnsfp8eD2Wewpw/edit?usp=sharing" target="_blank">Resume</a>
+            <a href = "mailto:marianne.chuy@tufts.edu">Contact</a>
+        </div>
+
+        <div class = "btn">
+            <i class = "fas fa-bars menu-btn"></i>
+        </div>
+    </nav>
+
+    <section class = "section-main">
+    <section class = "content">
+        <img style = "width: 60%;" src = "robot images/titlepage.png">
+        <p> Our task was to build an intrepid robot that would travel across the Science and Engineering Complex
+            at Tufts. 
+        </p>
+        <h2>Requirements</h2>
+        <div class="s1row">
+            <div class="s1col1" >
+                <img class = "s2" src = "robot images/robotinaction.jpeg" >
+                <p2 style = "margin-left:2.5vw ;">The robot in action</p2>
+            </div>
+            <div class="s1col2">
+                <div class = "s1col2content">
+                    <p1> The robot must do three things in 15 minutes:</p1>
+                <ul class = "li1">
+                    <li>High-five a teacher's assistant</li>
+                    <li>Travel upstairs to Prof. Jason Rife's office</li>
+                    <li>High-five Prof. Rife</li>
+                </ul>
+                <br><br>
+                <p1>Restrictions:</p1>
+                <ul class = "li2">
+                    <li>Robot should be remote controlled</li>
+                    <li>Robot should be controlled through wifi through a laptop or phone</li>
+                    <li>Robot cannot fly (no drones)</li>
+                    <li>Cannot clear a path for the robot (must travel over multiple surfaces)</li>
+                </ul>   
+                </div>
+            </div>
+        </div>
+        <h2>How it works</h2>
+        <img class = "s1" src = "robot images/howitworks.png" style = "box-shadow:none">
+
+
+        <h2>Raspberry Pi Setup</h2>
+
+        <div class="s1row">
+            <div class="s1col1" >
+                <div class = "s1col1content2">
+                <p1>In order for the robot to run remotely, we needed Raspberry Pi to connect to the Wifi. </p1> <br><br>
+                <p1>We used their built-in Python program to write the code that would be burned onto the Raspberry Pi, then sent to the Arduino,
+                    which would control the motors on either side of the robot through the motor driver (L298N). </p1>
+                </div>
+            </div>
+            <div class="s1col2">
+                    <img class = "s1" src = "robot images/rpi_console_cable.png" >
+                    <p2 style = "margin-left: 3vw;">Console set-up to burn the Raspberry Pi's SD card</p2>
+            </div>
+        </div>
+
+        <h2>Arduino Setup</h2>
+
+        <div class="s1row">
+            <div class="s1col1" >
+                <img class = "s2" src = "robot images/motordriver&arduino.avif" >
+                <p2 style = "margin-left:2.5vw ;">Motor driver (L298N) and Arduino set-up</p2>
+            </div>
+            <div class="s1col2">
+                <div class = "s1col1content2">
+                  <p1> The Raspberri Pi remotely sends messages to the Arduino, which then triggers a pin response to go either 
+                      HIGH or LOW on the four selected pins. These pins correspond to the L298N motor driver, which will trigger an
+                      output of voltage to each of the stepper motors on either side of the robot.
+                  </p1>
+            </div>
+        </div>
+        </div>
+
+        <h2>Code and Interface</h2>
+        <img class = "s3" src = "robot images/c&i.png" style = "box-shadow:none" >
+        <h2>Demo</h2>
+        <video controls loop class = "video">
+            <source src = "robot images/robot.mp4" type = "video/mp4">
+        </video>
+
+
+
+
+
+        <div class="footer-basic">
+            <footer>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/portfolio/work/work.html">All</a></li>
+                    <li class="list-inline-item"><a href = "/portfolio/pastelitos/pastelitos.html">Front-End Website Development</a></li>
+                    <li class="list-inline-item"><a href="/portfolio/zoox/zoox.html">UI/UX Design & Prototyping</a></li>
+                    <li class="list-inline-item"><a style = "color: #61210F;"href="/portfolio/robot (ME30)/robot.html">Hardware and Software Development</a></li>
+                    <li class="list-inline-item"><a href="/portfolio/teardown (ME40)/teardown.html">Product Design Analysis</a></li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+    </section>
+    
+            <script type = "text/javascript" src = "/portfolio/about/about.js"></script>
+            <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+            <script>
+function showImages(el) {
+    var windowHeight = jQuery( window ).height();
+    $(el).each(function(){
+        var thisPos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (topOfWindow + windowHeight - 200 > thisPos ) {
+            $(this).addClass("fadeIn");
+        }
+    });
+}
+
+// if the image in the window of browser when the page is loaded, show that image
+$(document).ready(function(){
+        showImages('.content img');
+        showImages('.video');
+
+});
+
+// if the image in the window of browser when scrolling the page, show that image
+$(window).scroll(function() {
+        showImages('.content img');
+        showImages('.video');
+});
+    </script>
+</body>
+</html>
