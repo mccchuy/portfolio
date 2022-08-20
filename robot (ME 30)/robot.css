@@ -122,7 +122,8 @@ nav .btn:hover {
     margin-left: auto;
     margin-right: auto;
     width: 40%; 
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.3;
 }
 
@@ -131,8 +132,8 @@ nav .btn:hover {
     margin-bottom: 50px;
     display: block;
     color: #61210F;
-    font-family: 'Prata', serif;
-    font-size: 26px;
+    font-size: 20px;
+    font-weight: 600;
     text-align: center;
 
 }
@@ -174,7 +175,9 @@ nav .btn:hover {
 } 
 
 p1 {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;    
     width: 10vw;
 
 }
