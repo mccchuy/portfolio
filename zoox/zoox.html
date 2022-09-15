@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Prata&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/de8b3395ba.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
     <title>Marianne Chuy's Portfolio</title>
     <link rel="stylesheet" href="zoox.css"></head>
 <body>
@@ -31,7 +36,7 @@
     </nav>
 
     <section class = "section-main">
-    <section class = "content">
+    <section class = "content container-fluid">
         <img src = "zoox images/titleimg.png">
             <p> ZOOX is a company creating self-driving or autonomous vehicles 
             designed to make personal transportation safer, cleaner, and 
@@ -106,39 +111,38 @@
             <h2>Style Guide</h2>
                 <img class = "img1" src = "zoox images/styleguide.png" style = "width: 70%">
             <h2 style = "margin-bottom: 40px;">High-Fidelity Screens</h2>
-                <div class="s1row">
-                    <div class="s1col1" >
+                <div class="s1row row container-fluid ">
+                    <div class="s1col1 col-md-6 align-self-center" >
                         <img class = "s1" src = "zoox images/ConfirmationCode.png" >
                         <img class = "s1" src = "zoox images/ResendCode.png">
                     </div>
-                    <div class="s1col2">
+                    <div class="s1col2 col-md-6 align-self-center">
                         <h4>Onboarding</h4>
                         <p1 class = "hfp">In the initial screen, users are asked to confirm their identity by entering a code on their phone sent to them by the ZOOX app. The user has the option to resend a new code if they no longer can access their first code.</p1>
                     </div>
                 </div>
 
-                <div class="s1row">
-                    <div class="s1col1" >
+                <div class="s1row row container-fluid">
+                    <div class="s1col1 col-md-6 align-self-center" >
                         <img class = "s1" src = "zoox images/Dashboard Screen.png" >
                         <img class = "s1" src = "zoox images/Dashboard Screen (PB).png">
                     </div>
-                    <div class="s1col2" id = "col2">
+                    <div class="s1col2 col-md-6 align-self-center" id = "col2">
                         <h4>Dashboard</h4>
-                        <p1 class = "hfp" > These two screens show the interaction of the panic button, which allows the user to call for help in the event
-                            of an emergency.<br><br>On the dashboard screen, the user is able to view information displayed in bright purple
+                        <p1 class = "hfp" >On the Dashboard screen, the user is able to view information displayed in bright purple
                             and interact with features in blue. This is true for all screens within the ZOOX UI. <br> <br>The Dashboard screen is modeled
                             after a a typical car dashboard, with the user having access to turn signal info, which mode the car is in, 
-                            the spedometer, and the positioning of the wheel in real time. <br> <br>It also gives the user the ability to view trip details,
-                            current date, time, and climate information and a navigation map. </p1>
+                            the spedometer, and other information. <br><br> These two screens show the interaction of the panic button, which allows the user to call for help in the event
+                            of an emergency. </p1>
                     </div>
                 </div>
 
-                <div class="s1row">
-                    <div class="s1col1" >
+                <div class="s1row row container-fluid">
+                    <div class="s1col1 col-md-6 align-self-center" >
                         <img class = "s1" src = "zoox images/nav1.png" >
                         <img class = "s1" src = "zoox images/nav1 expanded.png">
                     </div>
-                    <div class="s1col2" id = "col2">
+                    <div class="s1col2 col-md-6 align-self-center" id = "col2">
                         <h4>Navigation</h4>
                         <p1 class = "hfp" > These two screens show the ability to expand the navigation view within
                             the navigation page <br><br> The user also has the option to edit their trip
@@ -146,12 +150,12 @@
                     </div>
                 </div>
 
-                    <div class="s1row">
-                        <div class="s1col1" >
+                    <div class="s1row row container-fluid">
+                        <div class="s1col1 col-md-6 align-self-center" >
                             <img class = "s1" src = "zoox images/ccmodes.png" >
                             <img class = "s1" src = "zoox images/ccmodes bookmark.png">
                         </div>
-                        <div class="s1col2" id = "col2">
+                        <div class="s1col2 col-md-6 align-self-center" id = "col2">
                             <h4>Climate Controls - Modes</h4>
                             <p1> These screens show the ability to choose between 3 preset modes, access 
                                 access saved modes, and create custom modes.  <br><br> The second screen shows 
@@ -160,11 +164,11 @@
                         </div>
                     </div>
 
-                        <div class="s1row" id = "temprow" >
-                            <div class="s1col1" >
+                        <div class="s1row row container-fluid" id = "temprow" >
+                            <div class="s1col1 col-md-6 align-self-center" >
                                 <img class = "s2" src = "zoox images/cctemp.png" >
                             </div>
-                            <div class="s1col2" id = "tempcol2">
+                            <div class="s1col2 col-md-6 align-self-center" id = "tempcol2">
                                 <h4>Climate Controls - Temperature</h4>
                                 <p1 class = "hfpspace"> This screen shows the ability to control the temperature in the ZOOX vehicle through a dial,
                                     with the ability to control fan speeds on both sides, and the current temperature outside
@@ -172,22 +176,22 @@
                             </div>
                         </div>
 
-                        <div class="s1row" id = "temprow">
-                            <div class="s1col1" >
+                        <div class="s1row row container-fluid" id = "temprow">
+                            <div class="s1col1 col-md-6 align-self-center" >
                                 <img class = "s2" src = "zoox images/ccseats.png" >
                             </div>
-                            <div class="s1col2" id = "tempcol2">
+                            <div class="s1col2 col-md-6 align-self-center" id = "tempcol2">
                                 <h4>Climate Controls - Seats</h4>
                                 <p1 class = "hfpspace"> This screen allows the user to adjust the seat by reclining or bringing the seat up, and bringing
                                     the seat forward or backward, and to adjust the seat warmer temperature. </p1>
                             </div>
                         </div>
 
-                        <div class="s1row" id = "temprow">
-                            <div class="s1col1" >
+                        <div class="s1row row container-fluid" id = "temprow">
+                            <div class="s1col1 col-md-6 align-self-center" >
                                 <img class = "s2" src = "zoox images/cclighting.png" >
                             </div>
-                            <div class="s1col2" id = "tempcol2">
+                            <div class="s1col2 col-md-6 align-self-center" id = "tempcol2">
                                 <h4>Climate Controls - Lighting</h4>
                                 <p1 class = "hfpspace"> This screen allows the user to control the lighting by either turning the lights on/off, dimming them and adjusting their color,
                                     and allowing in natural light by adjusting the blinds level and direction. The current weather is also made available to better inform
@@ -197,7 +201,7 @@
 
                         <div class = "additionals">
                             <h2>Additional Screens</h2>
-                            <img class = "s3" src = "zoox images/additional screens.png" >
+                            <img style = "width: 100%;"class = "s3" src = "zoox images/additional screens.png" >
                             <p2> From left to right: <i>RealView, CarView, Dashboard Screen in motion</i> screens</p2>
                         </div>
 
@@ -209,7 +213,7 @@
                             <li class="list-inline-item"><a href="/portfolio/work/work.html">All</a></li>
                             <li class="list-inline-item"><a href = "/portfolio/pastelitos/pastelitos.html">Front-End Website Development</a></li>
                             <li class="list-inline-item"><a style = "color: #61210F;"href="/portfolio/zoox/zoox.html">UI/UX Design & Prototyping</a></li>
-                            <li class="list-inline-item"><a href="/portfolio/robot/robot.html">Hardware and Software Development</a></li>
+                            <li class="list-inline-item"><a href="/portfolio/robot (ME30)/robot.html">Hardware and Software Development</a></li>
                             <li class="list-inline-item"><a href="/portfolio/teardown (ME40)/teardown.html">Product Design Analysis</a></li>
                         </ul>
                     </footer>
