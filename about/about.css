@@ -105,29 +105,18 @@ nav .btn:hover {
 }
 /*content*/
 
-.main:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.col1, .col2 {
-    float: left;
-    width: 50%;
-}
-
 .col1 img {
     object-fit: cover;
     height: 500px;
     width: 500px;
     background-color: #B16651;
     padding: 50px;
-    margin-left: 100px;
 } 
+
 .about-text {
-    margin-top: 50px;
-    margin-left: 50px;
+    margin: 0 auto;
 }
+
 .about-text h2{
     font-weight: 400;
     font-size: 20px;
@@ -146,8 +135,29 @@ nav .btn:hover {
 .about-text p {
     font-size: 16px;
     font-weight: 400;
-    max-width: 60%;
+    max-width: 100%;
     line-height: 1.3;
+}
+
+.col1 {
+    text-align: center;
+
+}
+
+.col2 {
+    padding: 0 7%;
+}
+
+@media screen and (max-width: 992px) {
+    .col2 {
+        width: 70%;
+        margin: 0 auto;
+
+    }
+
+    .about-text {
+        margin: 30px auto 0;
+    }
 }
 
 .about-text button{
@@ -169,17 +179,13 @@ nav .btn:hover {
 }
 
 
-
  .connect {
-    margin-left: 50px;
     margin-top: 50px;
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 .connect p {
+    padding-top: 3px;
     font-size: 15px;
     margin-right: 60px;
     color: #61210F;
@@ -193,7 +199,7 @@ nav .btn:hover {
 .connect .links a{
     display: inline-block;
     color:#61210F;
-    font-size: 18px;
+    font-size: 20px;
     transition: .3s;
 }
 
@@ -202,14 +208,13 @@ nav .btn:hover {
     transition: .3s;
 }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     .col1 {
         width: 100%;
         display: flex;
         justify-content: center;
         margin-left: -50px;
     }
-    /*can't center properly*/
      .col2 {
         width: 100%;
         margin-left: 23vw;
@@ -229,4 +234,4 @@ nav .btn:hover {
         width: 450px;
     } 
 
-}
+} */
