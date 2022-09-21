@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&family=Prata&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/de8b3395ba.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Marianne Chuy's Portfolio</title>
     <link rel="stylesheet" href="teardown.css">
 
@@ -40,30 +44,45 @@
         
         <h2>Project Outline</h2>
         <div class ="rpc-container">
-            <a href = "#userexperience" class = "liheader">User Experience</a>
-            <ul>
-                <li>Intended User</li>
-                <li>Packaging</li>
-                <li>First Use</li>
-                <li>Task Analysis</li>
-                <li>Off-Nominal Use</li>
-            </ul>
+            
+            <div class = "column">
+                <a href = "#userexperience" class = "liheader1">User Experience</a>
+            </div>
+            
+            <div class = "column">
+                <ul>
+                    <li>Intended User</li>
+                    <li>Packaging</li>
+                    <li>First Use</li>
+                    <li>Task Analysis</li>
+                    <li>Off-Nominal Use</li>
+                </ul>
+            </div>
 
-            <a href = "#designfunction" class = "liheader">Design & Function</a>
-            <ul>
-                <li>External Product Overview</li>
-                <li>Exploded Product View</li>
-                <li>Decomposition Table</li>
-                <li>Function Structure</li>
-                <li>CAD Model of Product</li>
-            </ul>
         </div>
+        <div class ="rpc-container">
+
+            <div class = "column">
+                <a href = "#designfunction" class = "liheader2">Design & Function</a>
+            </div>
+            <div class = "column">
+                <ul>
+                    <li>External Product Overview</li>
+                    <li>Exploded Product View</li>
+                    <li>Decomposition Table</li>
+                    <li>Function Structure</li>
+                    <li>CAD Model of Product</li>
+                </ul>
+            </div>
+
+        </div>
+
         <h2 id = "userexperience">User Experience</h2>
-        <div class="row">
-            <div class="col1">
+        <div class="row1 row container-fluid">
+            <div class="col1 col-md-6 align-self-center">
                 <img src = "teardownimages/nebulizer.png">
             </div>
-            <div class="col2">
+            <div class="col2 col-md-6 align-self-center">
                 <h4>Intended User</h4> <br>
                 <p1> Based on packaging, we deduced that the indended audience is 
                     primarily English-speaking people that need medicine administered
@@ -74,11 +93,11 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col1">
+        <div class="row1 row container-fluid">
+            <div class="col1 col-md-6 align-self-center">
                 <img class = "packagingimg" src = "teardownimages/packaging.png">
             </div>
-            <div class="col2">
+            <div class="col2 col-md-6 align-self-center">
                 <h4>Packaging</h4> <br>
                 <p1> To open the box, the user opens the flap on the top of the box to reveal the product inside.
                     The packaging seems able to withstand harsh shipping conditions 
@@ -94,11 +113,11 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col1">
+        <div class="row1 row container-fluid">
+            <div class="col1 col-md-6 align-self-center">
                 <img src = "teardownimages/firstassembly.png">
             </div>
-            <div class="col2">
+            <div class="col2 col-md-6 align-self-center">
                 <h4>First Use</h4> <br>
                 <p1>We found that the first assembly without instructions did not seem obvious; not sure how the multiple
                     components fit together. The user knew they were ready to try the product once all the parts were used, 
@@ -122,11 +141,11 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col1">
+        <div class="row1 row container-fluid">
+            <div class="col1 col-md-6 align-self-center">
                 <img src = "teardownimages/taskanalysis.png">
             </div>
-            <div class="col2">
+            <div class="col2 col-md-6 align-self-center">
                 <h4>Task Analysis</h4> <br>
                 <p1> This task analysis will take us through the user's first attempt at using the nebulizer:
                     <ol class = "assembly">
@@ -151,11 +170,11 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col1">
+        <div class="row1 row container-fluid">
+            <div class="col1 col-md-6 align-self-center">
                 <img src = "teardownimages/offnominaluse.png">
             </div>
-            <div class="col2">
+            <div class="col2 col-md-6 align-self-center">
                 <h4>Off-Nominal Use</h4> <br>
                 <p1> We found that the nebulizer could be used as either a humidifier or a facial steamer.</p1>
                 <br>
@@ -181,11 +200,11 @@
         <h2 id = "designfunction">Design & Function</h2>
 
 
-        <div class="row">
-            <div class="col1">
+        <div class="row1 row container-fluid">
+            <div style = "margin-top: -50px" class ="col1 col-md-6 align-self-center">
                 <img src = "teardownimages/extproductoverview.png">
             </div>
-            <div class="col2">
+            <div class="col2 col-md-6 align-self-center">
                 <h4>External Product</h4> <br>
                 <p1> The on/off switch on the atomizer is the main feature that users interact with to enable proper usage.</p1>
                 <br>
@@ -202,33 +221,33 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col1">
+        <div class="row1 row container-fluid">
+            <div class="col1 col-md-6 align-self-center">
                 <img style = "display: block;width: 90%; height: auto;" src = "teardownimages/explodedview.png">
             </div>
-            <div class="col2">
+            <div class="col2 col-md-6 align-self-center">
                 <h4>Exploded Product View</h4> <br>
                 <p1> The photo on the left depicts an exploded view of the overall product.</p1>
             </div>
         </div>
 
         
-        <div class="row">
-            <div class="col1ie">
+        <div class="row1 row container-fluid">
+            <div class="col1ie col-md-6 align-self-center ">
                 <h4 >Internal View</h4> <br> 
                 <img src = "teardownimages/internalcomponents.png">
             </div>
-            <div class="col1ie">
+            <div class="col2ie col-md-6 align-self-center">
                 <h4>External View</h4> <br>
                 <img src = "teardownimages/externalcomponents.png">
             </div>
         </div>
 
-        <div class="row">
-            <div class="col1">
+        <div class="row1 row container-fluid">
+            <div class="col1 col-md-6 align-self-center">
                 <img  src = "teardownimages/decomptable.png">
             </div>
-            <div class="col2">
+            <div class="col2 col-md-6 align-self-center">
                 <h4>Decomposition Table</h4> <br>
                 <p1> This is the first page of the product decomposition table that details each component of the 
                     product, their name, quantity required, material it's made of, manufacturing process, and a close-up image.</p1>
@@ -238,11 +257,11 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col1">
+        <div class="row1 row container-fluid">
+            <div class="col1 col-md-6 align-self-center">
                 <img style =  "width: 80%;"" src = "teardownimages/functionstructure.png">
             </div>
-            <div class="col2">
+            <div class="col2 col-md-6 align-self-center">
                 <h4>Function Structure</h4> <br>
                 <p1> This function structure details the energy, material, and information inputs and outputs. It provides a narrative that identifies critical components and traces their contribution
                     to the main functionality of the product.
@@ -250,12 +269,12 @@
             </div>
         </div>
         <h4  class="rowCAD">CAD Models</h4> <br>
-            <div class="row">
-            <div class="col1ie">
+            <div class="row row container-fluid">
+            <div class="col1ie col-md-6 align-self-center">
                 <h4 >Isometric View</h4> <br> 
                 <img style = "width: 80%;"src = "teardownimages/CADiso.png">
             </div>
-            <div class="col1ie">
+            <div class="col2ie col-md-6 align-self-center">
                 <h4>Exploded View</h4> <br>
                 <img  style = "width: 80%;"src = "teardownimages/CADexploded.png">
             </div>
@@ -269,8 +288,8 @@
                     <li class="list-inline-item"><a href="/portfolio/work/work.html">All</a></li>
                     <li class="list-inline-item"><a href = "/portfolio/pastelitos/pastelitos.html">Front-End Website Development</a></li>
                     <li class="list-inline-item"><a href="/portfolio/zoox/zoox.html">UI/UX Design & Prototyping</a></li>
-                    <li class="list-inline-item"><a href="/portfolio/robot/robot.html">Hardware and Software Development</a></li>
-                    <li class="list-inline-item"><a style = "color: #61210F;"href="/portfolio/teardown (ME40)/teardown.html">Product Design Analysis</a></li>
+                    <li class="list-inline-item"><a href="/portfolio/robot.html">Hardware and Software Development</a></li>
+                    <li class="list-inline-item"><a style = "color: #61210F;"href="/portfolio/teardown.html">Product Design Analysis</a></li>
                 </ul>
             </footer>
         </div>
