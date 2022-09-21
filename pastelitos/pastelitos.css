@@ -138,7 +138,7 @@ nav .btn:hover {
     margin-bottom: 50px;
     display: block;
     color: #61210F;
-    font-size: 26px;
+    font-size: 3.5vh;
     text-align: center;
     font-weight: 600;
 }
@@ -204,7 +204,7 @@ nav .btn:hover {
 .content h4{
 
     margin: 30px 0 30px 20%;
-    font-size: 18px;
+    font-size: 3.3vh;
     font-weight: 400;
 
 }
