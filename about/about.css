@@ -119,14 +119,14 @@ nav .btn:hover {
 
 .about-text h2{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 3.5vh;
     letter-spacing: 0.5px;
     color: #61210F;
 
 }
 
 .about-text h5 {
-    font-size: 18px;
+    font-size: 3.3vh;
     font-weight: 400px;
     line-height: 1.2;
     margin: 15px 0 15px;
