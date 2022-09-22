@@ -211,12 +211,29 @@ nav .btn:hover {
 /* for iphone */
 
 @media screen and (max-width: 390px) { 
-    /* nav .brand {
-        font-size: 20px;
-    } */
+  body {
+        overflow-x: hidden;
+    }
 
     nav .menu {
-        height: 100vh;
+        height: 100%;
+    }
+
+    .col1 img {
+        text-align: center;
+        position: relative;
+        left: -5px;
+    } 
+
+    .col2 {
+        margin: 0 auto;
+        min-width: 100%;
+        left: 72.5px;
+
+    }
+
+    h2, h5{
+        text-align: center;
     }
 
 
