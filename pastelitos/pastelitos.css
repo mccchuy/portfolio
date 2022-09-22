@@ -320,6 +320,14 @@ nav .btn:hover {
     .content p {
         width: 70%;
     }
+    
+    .content .img2 {
+        margin-left: 55px;
+    }
+
+    .content .img3 {
+        margin-left: 0px;
+    }
 
 }
 
