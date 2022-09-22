@@ -208,30 +208,16 @@ nav .btn:hover {
     transition: .3s;
 }
 
-/* @media screen and (max-width: 1200px) {
-    .col1 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-left: -50px;
+/* for iphone */
+
+@media screen and (max-width: 390px) { 
+    /* nav .brand {
+        font-size: 20px;
+    } */
+
+    nav .menu {
+        height: 100vh;
     }
-     .col2 {
-        width: 100%;
-        margin-left: 23vw;
-        width: 450px;
-        max-width: 100%;
 
-    } 
+
 }
-
-
-
-@media screen and (max-width: 800px) {
-
-    .col2 {
-        width: 100%;
-        margin-left: 10vw;
-        width: 450px;
-    } 
-
-} */
