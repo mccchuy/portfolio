@@ -154,22 +154,6 @@ nav .btn:hover {
     justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
-    .s1row {
-        display: block;
-    }
-    
-    .s1col1 {
-        width:100%;
-        margin: auto;
-
-    }
-    .s1col2 {
-        margin: 30px auto;
-    }
-
-}
-
 .s1col2content {
     margin-left: 5vw;
 } 
@@ -210,6 +194,23 @@ p2 {
     width: 75%;
 }
 
+@media screen and (max-width: 600px) {
+    .s1row {
+        display: block;
+    }
+    
+    .s1col1 {
+        background-color:aqua;
+        width:80%;
+        margin: auto;
+
+    }
+    .s1col2 {
+        margin: 30px auto;
+        width: 90%;
+    }
+
+}
 
 .s2 {
     display: block;
@@ -279,4 +280,26 @@ p2 {
 @keyframes animat_show{
     0%{opacity:0}
     100%{opacity:1}
+}
+
+@media screen and (max-width: 390px) { 
+    nav .brand {
+        font-size: 21px;
+        position: relative; 
+        left: -42px;
+    }
+
+    .menu-btn {
+        position: relative; 
+        left: 40px;
+    }
+
+    .content p, p1 {
+        background-color: #B16651;
+        width: 80%;
+    }
+
+    .content img {
+        width: 100%;
+    }
 }
