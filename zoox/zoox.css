@@ -130,7 +130,7 @@ nav .btn:hover {
     margin-bottom: 50px;
     display: block;
     color: #61210F;
-    font-size: 20px;
+    font-size: 3.5vh;
     font-weight: 600;
     text-align: center;
 
@@ -227,7 +227,7 @@ nav .btn:hover {
 }
 
 .lfcolumn h4 {
-    font-size: 18px;
+    font-size: 3.3vh;
     font-weight: 400;
     margin-bottom: 20px;
     text-align: center;
@@ -248,12 +248,6 @@ nav .btn:hover {
     padding: 15% 8%;
 }
 
-@media screen and (max-width: 768px) {
-    .s1col2 {
-        margin-left: 14%;
-        width: 70%
-    }
-}
 
 .s1col1 .s1 {
     display: block;
@@ -293,6 +287,14 @@ p2 {
 #button2 {
     margin-top: 50px;
 }
+
+@media screen and (max-width: 768px) {
+    .s1col2 {
+        width: 80%;
+    }
+
+}
+
 
 /*content end*/
 
@@ -341,3 +343,40 @@ p2 {
     0%{opacity:0}
     100%{opacity:1}
 }
+
+@media screen and (max-width: 390px) { 
+    nav .brand {
+        font-size: 21px;
+        white-space: nowrap;
+        position: relative; 
+        left: -42px;
+        }
+
+    .menu-btn {
+        position: relative; 
+        left: 40px;
+    }
+
+    .content p {
+        width: 70%;
+    }
+
+    .req {
+        width: 70%;
+        margin-left: 30px;
+    }
+
+    .s1col2 h4 {
+        text-align: center;
+        width: 300px;
+        left: -100px;
+        
+    }
+
+    .s1col2 p1 {
+        position: relative;
+        left: 35px !important;
+    }
+}
+
+
