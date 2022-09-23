@@ -353,3 +353,24 @@ h4 {
     100%{opacity:1}
 }
 
+@media screen and (max-width: 390px) { 
+    nav .brand {
+        font-size: 21px;
+        white-space: nowrap;
+        position: relative; 
+        left: -42px;
+        }
+
+    .menu-btn {
+        position: relative; 
+        left: 40px;
+    }
+
+    .section-main {
+        padding-top: 7vh;
+    }
+
+    .liheader1, .liheader2 {
+        margin-left: 35px ;
+    }
+}
