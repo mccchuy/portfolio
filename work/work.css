@@ -119,6 +119,14 @@ nav .btn:hover {
     .row {
         display:block;
     }
+
+    #center {
+        width: 70% !important;
+    }
+
+    h2 {
+        margin: 0 auto !important;
+    }
 }
 
 .work-text {
@@ -193,18 +201,6 @@ img {
     font-weight: 500;
 }
 
-
-/* for iphone */
-@media screen and (max-width: 390px) { 
-    nav .brand {
-        font-size: 21px;
-        position: relative; 
-        left: -42px;
-    }
-
-    .menu-btn {
-        position: relative; 
-        left: 40px;
-    }
-
+#center {
+    width: 35%;
 }
